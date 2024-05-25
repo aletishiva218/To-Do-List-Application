@@ -1,0 +1,27 @@
+{
+  "name": "server-1",
+  "version": "1.0.0",
+  "description": "This is to do list server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "To",
+    "Do",
+    "List",
+    "Application"
+  ],
+  "author": "Shiva Aleti",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.1",
+    "jsonwebtoken": "^9.0.2",
+    "node-localstorage": "^3.0.5",
+    "uuid": "^9.0.1"
+  }
+}
