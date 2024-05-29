@@ -1,0 +1,198 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f6fa;
+}
+.bg-dark-light{
+    background-color: #f5f6fa !important;
+}
+.email-page,.to-do-page{
+    height: 100vh;
+    position: relative;
+}
+.email-page .spinner,.email-page form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.email-page form{
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: end;
+    column-gap: 1rem;
+    padding: 0.5rem;
+}
+.email-page form .submit-button{
+    text-wrap: nowrap;
+}
+@media only screen and (max-width:566px) {
+    .email-page form{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+}
+
+.submit-button,.to-do-page ,.to-do-page .add-button,.new-form .add-button{
+    border-radius: 1.5rem !important;
+    text-transform: none !important;
+}
+.new-form .add-button{
+    width: fit-content;
+    align-self: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 1rem 0;
+}
+.to-do-page > div:nth-child(1),.to-do-page > div:nth-child(2){
+    text-align: center;
+}
+.to-do-page > div:nth-child(2){
+    padding:1rem 0;
+}
+.to-do-page .tasks .task{
+    position: relative;
+}
+.to-do-page .tasks{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.to-do-page .search-tasks{
+    padding: 1rem;
+}
+.to-do-page .search-tasks > div:first-child{
+    margin-bottom: 1rem;
+}
+.task{
+    background-color: white;
+    padding: 0.5rem;
+}
+
+.to-do-page .spinner-container{
+    position: relative;
+    background-color: white;
+    height: 15rem;
+}
+.to-do-page .spinner-container .spinner{
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.to-do-page .task > div:last-child{
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0rem;
+}
+.to-do-page .task > div:nth-child(3){
+    display:flex;
+    column-gap: 1rem;
+}
+.to-do-page .empty-tasks-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 10rem;
+}
+.status{
+border-radius: 0.3rem;
+padding: 0 0.5rem;
+}
+.pending{
+    color:red;
+background-color: #fadbdb;
+}
+.completed{
+    color: rgb(0, 184, 0);
+background-color: #e8fadb;
+}
+.in-progress{
+    color: rgb(184, 178, 0);
+background-color: #f8fadb;
+text-wrap: nowrap;
+height: fit-content;
+}
+.new-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 1rem;
+    width: 60%;
+    padding: 1rem;
+}
+.new-form h1{
+    margin-bottom: 1rem;
+}
+.new-form > div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.header{
+    padding: 1rem 0;
+}
+.header h1{
+    color: #1976d2;
+}
+.header span{
+    color: #1976d2;
+}
+.color-primary{
+    color: #1976d2;
+}
+.new-button-container{
+    border-top: 1px solid #bdc3c7;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.tasks-heading{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.tasks-heading *{
+   height: fit-content;
+}
+.task-icons{
+    display: flex;
+    column-gap: 1rem;
+}
+@media only screen and (max-width:510px) {
+    .task-icons{
+    flex-direction: column;
+    row-gap: 0.5rem;
+    }
+    .task-icons span{
+        width: fit-content;
+    }
+}
+.date-input,.select-input{
+    padding-left: 0.3rem;
+    padding-top:0.5rem ;
+    padding-bottom: 0.5rem;
+}
+.just-self-container{
+    position: relative;
+    height: 6rem;
+}
+.just-start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.h1-to-do-page{
+    position: relative;
+}
+.logout-button{
+    position: absolute !important;
+    right: 0;
+}
